@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Telkom University</title>
+    </head>
+    <body>
+        <h1>Javascript can change images</h1>
+        <img id="myImage" onclick="changeImage()" src="E:\Coolyeah\Semester 5\Pengembangan Aplikasi Website\Week 5\4200113.png" width="100" height="180">
+        <p>Click on the image to change the image</p>
+        <script>
+            function changeImage() {
+                var image = document.getElementById('myImage');
+                if (image.src.match("bulbon")) {
+                    image.src = "4200119.png";
+                } else {
+                    image.src = "4200119.png"; }
+                }
+        </script>
+    </body>
+</html>
