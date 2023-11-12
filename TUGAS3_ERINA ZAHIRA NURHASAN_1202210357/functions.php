@@ -25,6 +25,7 @@ function tambah($data){
         VALUES
         ('','$picture', '$productid', '$productname', '$price', '$stok')";
     mysqli_query($conn,$query);
+    return mysqli_affected_rows($conn);
 }
 
 function del($no){
